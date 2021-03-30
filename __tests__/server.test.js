@@ -81,7 +81,6 @@ describe('Server', () => {
     const response = await request.delete(`/api/v1/clothes/${clothesId}`).send({type:"dress"}) //delete
     expect(response.status).toEqual(200);
     expect(response.body).toEqual(null);
-
   });
 
 
